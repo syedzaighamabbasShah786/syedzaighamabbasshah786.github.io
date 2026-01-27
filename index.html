@@ -8,7 +8,6 @@
     <meta name="description" content="Free YouTube SEO Tool for USA, India, Pakistan. Download HD Thumbnails, Generate Viral Tags, Extract Tags, YouTube SEO Suite 2026. Best Viral Tool by Syed Ali Hassan Shah.">
     <meta name="keywords" content="YouTube SEO, Viral Tags, Thumbnail Downloader, YouTube Tag Generator, Free SEO Tool, YouTube Metadata Extractor, SEO USA, YouTube India, SEO Pakistan, Download YouTube Thumbnail, Viral Tags Generator, Best YouTube SEO Tool, YT SEO, You Tube SEO, Youtub SEO, Yutub SEO, Tags for YouTube, YouTube Viral Keywords">
     <meta name="author" content="Syed Ali Hassan Shah">
-    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://syedali786.github.io/Best_viral_tool/">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,26 +15,33 @@
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Poppins:wght@300;600&display=swap');
+        
         body { background: #05070a; color: #e2e8f0; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
         .glass { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; }
         .neon-text { text-shadow: 0 0 10px rgba(239, 68, 68, 0.5); font-family: 'Orbitron', sans-serif; }
         .btn-premium { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); transition: 0.4s; border: none; }
+        
         input { background: #0f172a !important; color: #fff !important; border: 1px solid #1e293b !important; border-radius: 12px !important; }
-        .copy-badge { background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; color: #10b981; font-size: 10px; padding: 2px 8px; border-radius: 5px; cursor: pointer; }
+        input:focus { border-color: #6366f1 !important; outline: none; }
+        
+        .copy-badge { background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; color: #10b981; font-size: 10px; padding: 2px 8px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .copy-badge:hover { background: #10b981; color: #fff; }
 
         .quality-btn { background: #111827; border: 2px solid #1f2937; padding: 14px; border-radius: 16px; transition: 0.3s; cursor: pointer; text-align: left; width: 100%; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
         .quality-btn:hover { border-color: #ef4444; background: #1a1f2e; }
         .quality-btn span { color: #ffffff !important; font-weight: bold; font-size: 14px; }
         .download-icon { color: #ff0000 !important; font-size: 20px; }
 
-        .social-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; text-decoration: none; transition: 0.3s; }
+        .social-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; text-decoration: none; transition: 0.3s; padding: 10px; border-radius: 12px; }
+        .social-row:hover { background: rgba(255,255,255,0.05); }
         .social-row i { color: #ffffff !important; font-size: 24px; width: 30px; text-align: center; }
         .social-name { color: #00d4ff; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
         
-        #viralTags { word-wrap: break-word; line-height: 1.8; }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
     </style>
 </head>
-<body class="pb-10" onclick="multiClickAd()">
+<body class="pb-10">
 
     <div class="flex justify-center py-4 bg-[#0a0c10]">
         <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
@@ -47,7 +53,8 @@
             <i class="fa-solid fa-rocket text-3xl text-white"></i>
         </div>
         <h1 class="text-3xl font-black neon-text text-white italic tracking-tighter">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
-        <button onclick="handleSplash()" class="btn-premium px-12 py-4 rounded-full font-bold text-white tracking-widest mt-6">ACCESS AI ENGINE</button>
+        <p class="text-slate-400 text-sm mt-2">AI Based YouTube SEO Engine</p>
+        <button onclick="handleSplash()" class="btn-premium px-12 py-4 rounded-full font-bold text-white tracking-widest mt-6 shadow-[0_0_30px_rgba(168,85,247,0.4)]">ACCESS AI ENGINE</button>
     </div>
 
     <header class="pt-6 pb-4 text-center">
@@ -58,10 +65,14 @@
     <main class="max-w-md mx-auto px-4 space-y-6">
 
         <div class="glass p-6 border-t-4 border-purple-500/50">
-            <h2 class="text-xs font-bold text-purple-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-link"></i> EXTRACT FROM LINK</h2>
+            <h2 class="text-xs font-bold text-purple-400 mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-link"></i> EXTRACT METADATA
+            </h2>
+            <p class="text-[10px] text-slate-400 mb-4 font-semibold italic">Extract Video Title, Description, Viral Tags & Shorts Info</p>
+            
             <div class="flex gap-2 mb-4">
-                <input type="text" id="metaUrl" placeholder="Paste Video Link..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
-                <button onclick="extractAllData()" class="bg-purple-600 px-6 rounded-xl font-bold text-white">GO</button>
+                <input type="text" id="metaUrl" placeholder="Paste Video Link..." class="flex-1 p-4 outline-none text-sm" onfocus="smartAdTrigger()">
+                <button onclick="extractAllData()" class="bg-purple-600 px-6 rounded-xl font-bold text-white hover:bg-purple-700 transition">GO</button>
             </div>
             
             <div id="metaRes" class="hidden space-y-4">
@@ -75,19 +86,24 @@
                     <label class="text-[8px] uppercase text-purple-500 font-black">Optimized Description</label>
                     <p id="resDesc" class="text-[10px] mt-1 text-slate-400 h-24 overflow-y-auto pr-8"></p>
                 </div>
+                <div class="relative p-4 bg-black/40 rounded-xl border border-purple-500/10">
+                    <span class="copy-badge absolute top-2 right-2" onclick="copy('resTags')">COPY</span>
+                    <label class="text-[8px] uppercase text-purple-500 font-black">Extracted Tags</label>
+                    <p id="resTags" class="text-[10px] mt-1 text-slate-400 pr-8"></p>
+                </div>
             </div>
         </div>
 
         <div class="glass p-6 border-t-4 border-blue-500/50">
-            <h2 class="text-xs font-bold text-blue-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-bolt"></i> TAG GENERATOR</h2>
+            <h2 class="text-xs font-bold text-blue-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-bolt"></i> VIRAL TAG GENERATOR</h2>
             <div class="flex gap-2 mb-4">
-                <input type="text" id="topicInput" placeholder="Enter Topic (e.g. Cricket, Tech)..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
-                <button onclick="generateTags()" class="bg-blue-600 px-6 rounded-xl font-bold text-white">GENERATE</button>
+                <input type="text" id="topicInput" placeholder="Enter Topic (e.g. Cricket, Funny)..." class="flex-1 p-4 outline-none text-sm" onfocus="smartAdTrigger()">
+                <button onclick="generateTags()" class="bg-blue-600 px-6 rounded-xl font-bold text-white hover:bg-blue-700 transition">GENERATE</button>
             </div>
             
             <div id="tagRes" class="hidden relative p-4 bg-black/40 rounded-xl border border-blue-500/10">
                 <span class="copy-badge absolute top-2 right-2" onclick="copy('viralTags')">COPY ALL</span>
-                <label class="text-[8px] uppercase text-blue-500 font-black">Viral SEO Tags</label>
+                <label class="text-[8px] uppercase text-blue-500 font-black">AI Suggested Viral Tags</label>
                 <p id="viralTags" class="text-xs mt-2 text-slate-300 leading-relaxed"></p>
             </div>
         </div>
@@ -100,7 +116,7 @@
         <div class="glass p-6 border-t-4 border-red-500/50">
             <h2 class="text-xs font-bold text-red-500 mb-4 flex items-center gap-2"><i class="fa-solid fa-image"></i> THUMBNAIL DOWNLOADER</h2>
             <div class="flex gap-2 mb-6">
-                <input type="text" id="thumbUrl" placeholder="Paste YouTube Link..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
+                <input type="text" id="thumbUrl" placeholder="Paste YouTube Link..." class="flex-1 p-4 outline-none text-sm" onfocus="smartAdTrigger()">
                 <button onclick="prepareThumb()" class="bg-red-600 px-6 rounded-xl font-bold text-white">GO</button>
             </div>
             
@@ -112,7 +128,7 @@
                     <i class="fa-solid fa-circle-arrow-down download-icon"></i>
                 </button>
                 <button onclick="forceDownload('sddefault')" class="quality-btn">
-                    <span>Standard Quality (SD)</span>
+                    <span>High Quality (HQ/SD)</span>
                     <i class="fa-solid fa-circle-arrow-down download-icon"></i>
                 </button>
                 <button onclick="forceDownload('mqdefault')" class="quality-btn">
@@ -125,15 +141,15 @@
         <div class="glass p-8 border-t-2 border-indigo-500/30">
             <h2 class="text-lg font-bold text-white mb-6 text-center">Developed By</h2>
             <div class="space-y-4">
-                <a href="https://www.facebook.com/share/1BkM7n9jAn/" target="_blank" class="social-row" onclick="multiClickAd()">
+                <a href="https://www.facebook.com/share/1BkM7n9jAn/" target="_blank" class="social-row" onclick="smartAdTrigger()">
                     <i class="fa-brands fa-facebook-f"></i>
                     <span class="social-name">Syed Ali Hassan Shah</span>
                 </a>
-                <a href="https://youtube.com/@mast_tv_official" target="_blank" class="social-row" onclick="multiClickAd()">
+                <a href="https://youtube.com/@mast_tv_official" target="_blank" class="social-row" onclick="smartAdTrigger()">
                     <i class="fa-brands fa-youtube"></i>
                     <span class="social-name">Mast TV Official</span>
                 </a>
-                <a href="https://www.tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="social-row" onclick="multiClickAd()">
+                <a href="https://www.tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="social-row" onclick="smartAdTrigger()">
                     <i class="fa-brands fa-tiktok"></i>
                     <span class="social-name">Syed Ali Hassan Shah</span>
                 </a>
@@ -149,56 +165,63 @@
     </main>
 
     <script>
-        // Ad Logic
-        function multiClickAd() {
-            window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
+        // SMART AD LOGIC (One-time trigger)
+        let adServed = false;
+        function smartAdTrigger() {
+            if (!adServed) {
+                window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
+                adServed = true; // Prevents ad from opening again in this session
+            }
         }
 
         function handleSplash() {
-            multiClickAd();
+            smartAdTrigger();
             document.getElementById('splash').style.display='none';
         }
 
-        // Core Helper
+        // YT ID HELPER
         function getYTID(url) {
             const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
             const match = url.match(regExp);
             return (match && match[2].length == 11) ? match[2] : null;
         }
 
-        // Feature: Metadata Extractor
+        // 1. EXTRACTOR FUNCTION
         function extractAllData() {
-            multiClickAd();
+            smartAdTrigger();
             const url = document.getElementById('metaUrl').value;
             const id = getYTID(url);
-            if(!id) return alert("Please enter a valid YouTube link!");
+            if(!id) return alert("Invalid YouTube Link!");
             
             document.getElementById('metaRes').classList.remove('hidden');
-            document.getElementById('resTitle').innerText = "Viral YouTube SEO Strategy for Video ID: " + id;
-            document.getElementById('resDesc').innerText = "Title: Best Viral Video 2026\n\nDescription: In this video, Syed Ali Hassan Shah explains the best SEO strategies. #SEO #YouTubeGrowth #Viral #SyedAliHassanShah #MastTV";
+            document.getElementById('resTitle').innerText = "Viral Video Strategy #" + id + " | Professional YouTube SEO";
+            document.getElementById('resDesc').innerText = "In this video, we cover the top trends of 2026. This content is optimized for high ranking and visibility. \n\nKeywords: #SEO #Viral #SyedAliHassanShah #YouTubeGrowth #MastTV #Trending2026";
+            document.getElementById('resTags').innerText = "youtube seo, viral strategy, growth tips, hassan shah, mast tv official, trending keywords, shorts seo, viral 2026";
+            
             document.getElementById('metaRes').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Feature: Tag Generator (Restored Logic)
+        // 2. TAG GENERATOR FUNCTION
         function generateTags() {
-            multiClickAd();
+            smartAdTrigger();
             const topic = document.getElementById('topicInput').value;
             if(!topic) return alert("Please enter a topic!");
             
-            const tags = [
-                topic, `viral ${topic}`, `best ${topic} 2026`, `${topic} tutorial`, 
-                `${topic} tips`, `${topic} trending`, `how to ${topic}`, 
-                `syed ali hassan shah ${topic}`, `mast tv ${topic}`, `youtube seo ${topic}`
+            const viralList = [
+                topic, `viral ${topic}`, `best ${topic} 2026`, `${topic} trending`, 
+                `how to ${topic}`, `${topic} tips`, `new ${topic} video`, 
+                `syed ali hassan shah ${topic}`, `mast tv ${topic}`, `top ${topic} keywords`,
+                `youtube ${topic} seo`, `${topic} for beginners`, `${topic} 4k`, `trending shorts ${topic}`
             ];
             
             document.getElementById('tagRes').classList.remove('hidden');
-            document.getElementById('viralTags').innerText = tags.join(', ');
+            document.getElementById('viralTags').innerText = viralList.join(', ');
             document.getElementById('tagRes').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Feature: Thumbnail Downloader (Multiple Qualities)
+        // 3. THUMBNAIL FUNCTIONS
         function prepareThumb() {
-            multiClickAd();
+            smartAdTrigger();
             const url = document.getElementById('thumbUrl').value;
             const id = getYTID(url);
             if(!id) return alert("Invalid Link!");
@@ -209,20 +232,17 @@
         }
 
         function forceDownload(quality) {
-            multiClickAd();
             const id = getYTID(document.getElementById('thumbUrl').value);
             if(!id) return alert("Paste Link First!");
-            const imageUrl = `https://img.youtube.com/vi/${id}/${quality}.jpg`;
-            window.open(imageUrl, '_blank');
+            const finalUrl = `https://img.youtube.com/vi/${id}/${quality}.jpg`;
+            window.open(finalUrl, '_blank');
         }
 
-        // Copy Logic
-        function copy(id) {
-            const text = document.getElementById(id).innerText;
+        // COPY TO CLIPBOARD
+        function copy(elementId) {
+            const text = document.getElementById(elementId).innerText;
             navigator.clipboard.writeText(text).then(() => {
-                const btn = event.target;
-                btn.innerText = "COPIED! ✅";
-                setTimeout(() => btn.innerText = "COPY", 2000);
+                alert("Copied Successfully! ✅");
             });
         }
     </script>
