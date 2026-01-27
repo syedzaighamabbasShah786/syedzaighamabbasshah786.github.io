@@ -9,7 +9,7 @@
     <meta name="keywords" content="YouTube SEO, Viral Tags, Thumbnail Downloader, YouTube Tag Generator, Free SEO Tool, YouTube Metadata Extractor, SEO USA, YouTube India, SEO Pakistan, Download YouTube Thumbnail, Viral Tags Generator, Best YouTube SEO Tool, YT SEO, You Tube SEO, Youtub SEO, Yutub SEO, Tags for YouTube, YouTube Viral Keywords">
     <meta name="author" content="Syed Ali Hassan Shah">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourname.github.io/">
+    <link rel="canonical" href="https://syedali786.github.io/Best_viral_tool/">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,17 +24,20 @@
         .copy-badge { background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; color: #10b981; font-size: 10px; padding: 2px 8px; border-radius: 5px; cursor: pointer; }
 
         .quality-btn { background: #111827; border: 2px solid #1f2937; padding: 14px; border-radius: 16px; transition: 0.3s; cursor: pointer; text-align: left; width: 100%; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        .quality-btn:hover { border-color: #ef4444; background: #1a1f2e; }
         .quality-btn span { color: #ffffff !important; font-weight: bold; font-size: 14px; }
         .download-icon { color: #ff0000 !important; font-size: 20px; }
 
         .social-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; text-decoration: none; transition: 0.3s; }
         .social-row i { color: #ffffff !important; font-size: 24px; width: 30px; text-align: center; }
         .social-name { color: #00d4ff; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        #viralTags { word-wrap: break-word; line-height: 1.8; }
     </style>
 </head>
 <body class="pb-10" onclick="multiClickAd()">
 
-    <div class="flex justify-center py-2 bg-[#0a0c10]">
+    <div class="flex justify-center py-4 bg-[#0a0c10]">
         <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
         <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
     </div>
@@ -52,11 +55,6 @@
         <p class="text-[9px] text-slate-500 mt-1 font-bold tracking-[3px]">POWERED BY SYED ALI HASSAN SHAH</p>
     </header>
 
-    <div class="flex justify-center mb-6">
-        <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-        <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
-    </div>
-
     <main class="max-w-md mx-auto px-4 space-y-6">
 
         <div class="glass p-6 border-t-4 border-purple-500/50">
@@ -66,42 +64,37 @@
                 <button onclick="extractAllData()" class="bg-purple-600 px-6 rounded-xl font-bold text-white">GO</button>
             </div>
             
-            <div class="my-4">
-                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
-            </div>
-
             <div id="metaRes" class="hidden space-y-4">
                 <div class="relative p-4 bg-black/40 rounded-xl border border-purple-500/10">
                     <span class="copy-badge absolute top-2 right-2" onclick="copy('resTitle')">COPY</span>
                     <label class="text-[8px] uppercase text-purple-500 font-black">Video Title</label>
                     <p id="resTitle" class="text-xs mt-1 text-slate-200 pr-8"></p>
                 </div>
-                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
                 <div class="relative p-4 bg-black/40 rounded-xl border border-purple-500/10">
                     <span class="copy-badge absolute top-2 right-2" onclick="copy('resDesc')">COPY</span>
                     <label class="text-[8px] uppercase text-purple-500 font-black">Optimized Description</label>
-                    <p id="resDesc" class="text-[10px] mt-1 text-slate-400 h-20 overflow-y-auto pr-8"></p>
+                    <p id="resDesc" class="text-[10px] mt-1 text-slate-400 h-24 overflow-y-auto pr-8"></p>
                 </div>
             </div>
-        </div>
-
-        <div class="flex justify-center">
-            <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-            <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
         <div class="glass p-6 border-t-4 border-blue-500/50">
             <h2 class="text-xs font-bold text-blue-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-bolt"></i> TAG GENERATOR</h2>
             <div class="flex gap-2 mb-4">
-                <input type="text" id="topicInput" placeholder="Enter Topic..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
+                <input type="text" id="topicInput" placeholder="Enter Topic (e.g. Cricket, Tech)..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
                 <button onclick="generateTags()" class="bg-blue-600 px-6 rounded-xl font-bold text-white">GENERATE</button>
             </div>
-            <div class="mt-4">
-                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
+            
+            <div id="tagRes" class="hidden relative p-4 bg-black/40 rounded-xl border border-blue-500/10">
+                <span class="copy-badge absolute top-2 right-2" onclick="copy('viralTags')">COPY ALL</span>
+                <label class="text-[8px] uppercase text-blue-500 font-black">Viral SEO Tags</label>
+                <p id="viralTags" class="text-xs mt-2 text-slate-300 leading-relaxed"></p>
             </div>
+        </div>
+
+        <div class="flex justify-center my-4">
+            <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+            <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
         <div class="glass p-6 border-t-4 border-red-500/50">
@@ -112,41 +105,51 @@
             </div>
             
             <div id="thumbRes" class="hidden space-y-4">
-                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
-                
                 <img id="previewImg" class="w-full rounded-xl border border-white/10 shadow-2xl mb-4" src="">
+                
                 <button onclick="forceDownload('maxresdefault')" class="quality-btn">
-                    <span>HD THUMBNAIL DOWNLOAD</span>
+                    <span>Ultra HD Quality (4K/1080p)</span>
+                    <i class="fa-solid fa-circle-arrow-down download-icon"></i>
+                </button>
+                <button onclick="forceDownload('sddefault')" class="quality-btn">
+                    <span>Standard Quality (SD)</span>
+                    <i class="fa-solid fa-circle-arrow-down download-icon"></i>
+                </button>
+                <button onclick="forceDownload('mqdefault')" class="quality-btn">
+                    <span>Medium Quality</span>
                     <i class="fa-solid fa-circle-arrow-down download-icon"></i>
                 </button>
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-            <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
-        </div>
-
         <div class="glass p-8 border-t-2 border-indigo-500/30">
             <h2 class="text-lg font-bold text-white mb-6 text-center">Developed By</h2>
             <div class="space-y-4">
+                <a href="https://www.facebook.com/share/1BkM7n9jAn/" target="_blank" class="social-row" onclick="multiClickAd()">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span class="social-name">Syed Ali Hassan Shah</span>
+                </a>
                 <a href="https://youtube.com/@mast_tv_official" target="_blank" class="social-row" onclick="multiClickAd()">
                     <i class="fa-brands fa-youtube"></i>
                     <span class="social-name">Mast TV Official</span>
                 </a>
+                <a href="https://www.tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="social-row" onclick="multiClickAd()">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span class="social-name">Syed Ali Hassan Shah</span>
+                </a>
             </div>
             
-            <div class="mt-6">
+            <div class="mt-8 flex justify-center">
                 <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
                 <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
             </div>
 
-            <p class="text-[10px] text-slate-600 uppercase font-bold tracking-[2px] mt-8 text-center">© 2026 Pro Viral SEO Suite</p>
+            <p class="text-[10px] text-slate-600 uppercase font-bold tracking-[2px] mt-8 text-center">© 2026 Pro Viral SEO Suite - ALL RIGHTS RESERVED</p>
         </div>
     </main>
 
     <script>
+        // Ad Logic
         function multiClickAd() {
             window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
         }
@@ -156,34 +159,50 @@
             document.getElementById('splash').style.display='none';
         }
 
+        // Core Helper
         function getYTID(url) {
             const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
             const match = url.match(regExp);
             return (match && match[2].length == 11) ? match[2] : null;
         }
 
+        // Feature: Metadata Extractor
         function extractAllData() {
             multiClickAd();
-            const id = getYTID(document.getElementById('metaUrl').value);
-            if(!id) return alert("Invalid Link!");
+            const url = document.getElementById('metaUrl').value;
+            const id = getYTID(url);
+            if(!id) return alert("Please enter a valid YouTube link!");
+            
             document.getElementById('metaRes').classList.remove('hidden');
-            document.getElementById('resTitle').innerText = "Viral Content Strategy #" + id;
-            document.getElementById('resDesc').innerText = "Optimized content strategy by Syed Ali Hassan Shah. #Growth #SEO #Viral #" + id;
+            document.getElementById('resTitle').innerText = "Viral YouTube SEO Strategy for Video ID: " + id;
+            document.getElementById('resDesc').innerText = "Title: Best Viral Video 2026\n\nDescription: In this video, Syed Ali Hassan Shah explains the best SEO strategies. #SEO #YouTubeGrowth #Viral #SyedAliHassanShah #MastTV";
             document.getElementById('metaRes').scrollIntoView({ behavior: 'smooth' });
         }
 
+        // Feature: Tag Generator (Restored Logic)
         function generateTags() {
             multiClickAd();
             const topic = document.getElementById('topicInput').value;
             if(!topic) return alert("Please enter a topic!");
+            
+            const tags = [
+                topic, `viral ${topic}`, `best ${topic} 2026`, `${topic} tutorial`, 
+                `${topic} tips`, `${topic} trending`, `how to ${topic}`, 
+                `syed ali hassan shah ${topic}`, `mast tv ${topic}`, `youtube seo ${topic}`
+            ];
+            
             document.getElementById('tagRes').classList.remove('hidden');
-            document.getElementById('viralTags').innerText = `${topic}, viral ${topic}, best ${topic} 2026, trending ${topic}, ${topic} tutorial, how to viral ${topic}`;
+            document.getElementById('viralTags').innerText = tags.join(', ');
+            document.getElementById('tagRes').scrollIntoView({ behavior: 'smooth' });
         }
 
+        // Feature: Thumbnail Downloader (Multiple Qualities)
         function prepareThumb() {
             multiClickAd();
-            const id = getYTID(document.getElementById('thumbUrl').value);
+            const url = document.getElementById('thumbUrl').value;
+            const id = getYTID(url);
             if(!id) return alert("Invalid Link!");
+            
             document.getElementById('thumbRes').classList.remove('hidden');
             document.getElementById('previewImg').src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
             document.getElementById('thumbRes').scrollIntoView({ behavior: 'smooth' });
@@ -192,13 +211,19 @@
         function forceDownload(quality) {
             multiClickAd();
             const id = getYTID(document.getElementById('thumbUrl').value);
+            if(!id) return alert("Paste Link First!");
             const imageUrl = `https://img.youtube.com/vi/${id}/${quality}.jpg`;
             window.open(imageUrl, '_blank');
         }
 
+        // Copy Logic
         function copy(id) {
             const text = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(text).then(() => alert("Copied! ✅"));
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = event.target;
+                btn.innerText = "COPIED! ✅";
+                setTimeout(() => btn.innerText = "COPY", 2000);
+            });
         }
     </script>
 </body>
