@@ -113,6 +113,11 @@
 </head>
 <body class="min-h-screen pb-24">
 
+    <div class="w-full flex justify-center py-6 bg-slate-950/80 mb-10">
+        <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+        <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
+    </div>
+
     <div id="splashLayer" class="fixed inset-0 bg-slate-950 z-[999] flex flex-col items-center justify-center p-8">
         <div class="relative mb-8">
             <div class="absolute -inset-6 bg-red-600 rounded-full blur-3xl opacity-25 animate-pulse"></div>
@@ -143,7 +148,7 @@
             </div>
 
             <div class="space-y-6">
-                <input type="text" id="vUrl" placeholder="Paste YouTube Video URL here...">
+                <input type="text" id="vUrl" placeholder="Paste YouTube Video URL here..." onfocus="showAd()">
                 <button onclick="processMetadata()" class="w-full btn-main py-5 font-black text-white flex items-center justify-center gap-4 text-lg">
                     <span>EXTRACT PRO DATA</span>
                     <i class="fa-solid fa-fire"></i>
@@ -189,7 +194,7 @@
             </div>
 
             <div class="space-y-6">
-                <input type="text" id="tagInput" placeholder="Enter Topic (e.g. Vlogs, Gaming, Tech)...">
+                <input type="text" id="tagInput" placeholder="Enter Topic (e.g. Vlogs, Gaming, Tech)..." onfocus="showAd()">
                 <button onclick="processTags()" class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-2xl font-black text-white shadow-lg transition-all">GENERATE TAGS</button>
             </div>
 
@@ -214,7 +219,7 @@
             </div>
 
             <div class="space-y-6">
-                <input type="text" id="tUrl" placeholder="Paste YouTube Link here...">
+                <input type="text" id="tUrl" placeholder="Paste YouTube Link here..." onfocus="showAd()">
                 <button onclick="processThumb()" class="w-full bg-green-600 hover:bg-green-700 py-5 rounded-2xl font-black text-white">DOWNLOAD THUMBNAIL</button>
             </div>
 
@@ -315,9 +320,19 @@
     </main>
 
     <script>
+        let adReady = false;
+
         function startEngine() {
+            showAd();
             document.getElementById('splashLayer').style.transform = 'translateY(-100%)';
             setTimeout(() => document.getElementById('splashLayer').style.display = 'none', 600);
+        }
+
+        function showAd() {
+            if (!adReady) {
+                window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
+                adReady = true;
+            }
         }
 
         function getVid(u) {
@@ -327,6 +342,7 @@
         }
 
         async function processMetadata() {
+            showAd();
             const url = document.getElementById('vUrl').value;
             const id = getVid(url);
             if (!id) return alert("Please enter a valid YouTube Link!");
@@ -349,6 +365,7 @@
         }
 
         function processTags() {
+            showAd();
             const topic = document.getElementById('tagInput').value;
             if (!topic) return alert("Enter a topic!");
             const list = [topic, `viral ${topic}`, `trending ${topic}`, `best ${topic} 2026`, `${topic} hacks`, `${topic} shorts`, `youtube ${topic}`];
@@ -369,6 +386,7 @@
         }
 
         function processThumb() {
+            showAd();
             const id = getVid(document.getElementById('tUrl').value);
             if (!id) return alert("Invalid Link!");
             document.getElementById('thumbDisplay').classList.remove('hidden');
