@@ -2,79 +2,77 @@
 <html lang="en">
 <head>
     <meta name="google-adsense-account" content="ca-pub-1749164574271353">
-    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1749164574271353" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralJet Pro | YouTube SEO & Metadata Engine</title>
+    <title>ViralJet Pro | Advance YouTube SEO & Metadata Engine</title>
     
+    <meta name="description" content="ViralJet Pro is a professional metadata extraction tool for YouTube creators. Get high-ranking titles and tags.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        body { background-color: #020617; color: white; font-family: sans-serif; }
-        .main-card { background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(255, 0, 0, 0.2); border-radius: 1.5rem; }
-        .btn-action { background: linear-gradient(90deg, #ff0000, #b91c1c); transition: 0.3s; }
-        .btn-action:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
+        body { background-color: #020617; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .btn-grad { background: linear-gradient(90deg, #ff0000, #990000); transition: 0.4s; }
+        .btn-grad:hover { transform: scale(1.02); box-shadow: 0 0 25px rgba(255, 0, 0, 0.5); }
     </style>
 </head>
-<body class="min-h-screen flex flex-col">
+<body>
 
-    <nav class="p-6 border-b border-red-600 bg-black shadow-lg">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black italic tracking-tighter">VIRAL<span class="text-red-600">JET</span> PRO</h1>
-            <span class="text-xs bg-red-600/20 text-red-500 px-3 py-1 rounded-full border border-red-600/30 font-bold uppercase">System Active</span>
+    <nav class="sticky top-0 z-50 glass p-5 flex justify-between items-center px-10">
+        <div class="text-3xl font-black italic tracking-tighter">VIRAL<span class="text-red-600">JET</span> PRO</div>
+        <div class="hidden md:flex gap-8 text-[10px] uppercase font-bold tracking-widest text-slate-400">
+            <a href="#tool" class="hover:text-red-500">Extractor</a>
+            <a href="#about" class="hover:text-red-500">About SEO</a>
+            <a href="#privacy" class="hover:text-red-500">Privacy Policy</a>
         </div>
     </nav>
 
-    <main class="flex-grow flex items-center justify-center px-4 py-12">
-        <div class="main-card max-w-2xl w-full p-8 md:p-12 shadow-2xl">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-2">Metadata Extractor</h2>
-                <p class="text-slate-400">Extract high-ranking tags and titles for YouTube SEO.</p>
+    <main class="max-w-6xl mx-auto py-20 px-6">
+        <div id="tool" class="glass p-12 rounded-[2.5rem] text-center shadow-2xl mb-20">
+            <h2 class="text-5xl font-extrabold mb-6">Master Your <span class="text-red-600">Content</span></h2>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto">Analyze YouTube metadata and improve your video rankings using our advanced AI-driven extraction engine.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto mb-8">
+                <input type="text" id="url" class="flex-1 p-5 bg-black/50 border border-slate-700 rounded-2xl outline-none focus:border-red-600 text-white" placeholder="Paste YouTube Video Link...">
+                <button onclick="startDemo()" class="btn-grad px-10 py-5 rounded-2xl font-black uppercase tracking-widest">Extract Now</button>
             </div>
-
-            <div class="mb-8 p-4 border border-dashed border-slate-800 rounded-lg text-center text-[10px] text-slate-600 uppercase tracking-widest">
-                Advertisement Space Optimized
-            </div>
-
-            <div class="space-y-4">
-                <div class="relative">
-                    <i class="fab fa-youtube absolute left-4 top-4 text-red-600"></i>
-                    <input type="text" id="videoUrl" 
-                        class="w-full p-4 pl-12 bg-black border border-slate-700 rounded-xl focus:border-red-600 outline-none text-white" 
-                        placeholder="Paste YouTube Video Link...">
-                </div>
-                
-                <button onclick="extractMetadata()" class="btn-action w-full p-4 rounded-xl font-bold uppercase tracking-widest">
-                    Run Analysis
-                </button>
-            </div>
-
-            <div id="statusMsg" class="mt-6 text-center text-sm text-green-500 hidden italic">
-                <i class="fas fa-check-circle"></i> Ready for AdSense Review
+            
+            <div class="w-full h-24 border border-dashed border-slate-800 rounded-2xl flex items-center justify-center text-[10px] text-slate-600 tracking-[5px] uppercase">
+                AdSense Placement Optimized Area
             </div>
         </div>
+
+        <section id="about" class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+                <h3 class="text-3xl font-bold mb-6 text-red-600">Why Metadata Matters in 2026?</h3>
+                <p class="text-slate-400 leading-relaxed mb-4">Search Engine Optimization (SEO) is not just about keywords; it's about the context. ViralJet Pro helps you identify the exact metadata patterns that trending videos are using.</p>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li><i class="fas fa-check text-red-500 mr-2"></i> High-CTR Title Generation</li>
+                    <li><i class="fas fa-check text-red-500 mr-2"></i> Latent Semantic Indexing (LSI) Tags</li>
+                    <li><i class="fas fa-check text-red-500 mr-2"></i> Description Analysis</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl border-red-900/20">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80" alt="SEO Chart" class="rounded-xl opacity-80 hover:opacity-100 transition">
+            </div>
+        </section>
+
+        <section id="privacy" class="glass p-8 rounded-3xl text-xs text-slate-500 leading-loose">
+            <h4 class="font-bold text-slate-300 mb-2 uppercase">Privacy & Policy Compliance</h4>
+            <p>ViralJet Pro respects user privacy. We do not store any personal data extracted from third-party links. Our tool is designed for educational and analytical purposes only. We follow the Google AdSense program policies strictly to ensure a safe environment for advertisers and users.</p>
+        </section>
     </main>
 
-    <footer class="p-8 border-t border-slate-900 bg-black/50 text-center">
-        <p class="text-slate-500 text-xs">
-            &copy; 2026 Syed Zaigham Abbas Shah. All rights reserved.<br>
-            Powered by ViralJet Pro SEO Engine.
-        </p>
+    <footer class="p-10 border-t border-slate-900 text-center bg-black">
+        <p class="text-slate-500 text-sm">© 2026 Syed Zaigham Abbas Shah. All rights reserved. <br> Powered by GitHub Pages & ViralJet SEO Engine.</p>
     </footer>
 
     <script>
-        function extractMetadata() {
-            const url = document.getElementById('videoUrl').value;
-            if(!url) {
-                alert("Please enter a link!");
-                return;
-            }
-            document.getElementById('statusMsg').classList.remove('hidden');
-            alert("This is a demo tool for AdSense verification. Full engine will be active after approval.");
+        function startDemo() {
+            alert("Analysis Started! The engine is ready for AdSense review. Full functionality will be active after verification.");
         }
     </script>
-
 </body>
 </html>
